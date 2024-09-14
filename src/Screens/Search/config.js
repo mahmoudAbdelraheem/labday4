@@ -1,4 +1,4 @@
-import { ApiEndPoints } from "../../Config/EndPoints";
+import { ApiEndPoints } from "../../core/EndPoints";
 
 export const searchMoviesByName = async (movieName) => {
   const url =

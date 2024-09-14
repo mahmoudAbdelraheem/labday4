@@ -8,7 +8,7 @@ import {
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import styles from "./styles";
-import { ApiEndPoints } from "../../Config/EndPoints";
+import { ApiEndPoints } from "../../core/EndPoints";
 
 export default function MovieDetails({ navigation, route }) {
   const { movie } = route?.params;

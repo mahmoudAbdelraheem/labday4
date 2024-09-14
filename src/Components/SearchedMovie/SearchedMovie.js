@@ -1,7 +1,7 @@
 import { View, Text, Image, Pressable } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import styles from "./styles";
-import { ApiEndPoints } from "../../Config/EndPoints";
+import { ApiEndPoints } from "../../core/EndPoints";
 import { useNavigation } from "@react-navigation/native";
 export default function SearchedMovie({ movie }) {
   const navigation = useNavigation();
