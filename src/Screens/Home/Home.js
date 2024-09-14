@@ -40,7 +40,7 @@ export default function Home({ navigation }) {
   useEffect(() => {
     getHomeMovies();
 
-    let randomInt = getRandomInt(1, 20);
+    let randomInt = getRandomInt(1, popularMovies.length - 1);
     setBanarImageIndex(randomInt);
   }, []);
 

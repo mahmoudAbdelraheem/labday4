@@ -31,12 +31,11 @@ export default function MovieDetails({ navigation, route }) {
         <View style={styles.info}>
           <Text style={styles.category}>{movie.vote_count} Votes</Text>
           <View style={styles.rateContainer}>
-            <Text style={styles.rate}> {movie.vote_average} ⭐</Text>
+            <Text style={styles.rate}> {movie.vote_average.toFixed(1)} ⭐</Text>
           </View>
         </View>
       </ImageBackground>
 
-      {/* Wrap the content in ScrollView and apply contentContainerStyle */}
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.buttons}>
           <Pressable>
