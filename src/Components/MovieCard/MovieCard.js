@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import styles from "./styles";
 import { useNavigation } from "@react-navigation/native";
-import { ApiEndPoints } from "../../Config/EndPoints";
+import { ApiEndPoints } from "../../core/EndPoints";
 
 export default function MovieCard({ movie, topRated = false }) {
   const navigation = useNavigation();
