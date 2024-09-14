@@ -1,4 +1,10 @@
-import { View, Text, ImageBackground, Pressable } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  Pressable,
+  ScrollView,
+} from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Feather from "@expo/vector-icons/Feather";
 import styles from "./styles";
@@ -6,6 +12,7 @@ import { ApiEndPoints } from "../../Config/EndPoints";
 
 export default function MovieDetails({ navigation, route }) {
   const { movie } = route?.params;
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -28,7 +35,9 @@ export default function MovieDetails({ navigation, route }) {
           </View>
         </View>
       </ImageBackground>
-      <View style={styles.content}>
+
+      {/* Wrap the content in ScrollView and apply contentContainerStyle */}
+      <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.buttons}>
           <Pressable>
             <Text style={styles.play}>Watch Now</Text>
@@ -45,12 +54,12 @@ export default function MovieDetails({ navigation, route }) {
             </View>
           </Pressable>
         </View>
-        <View>
+        <View style={styles.movieDetails}>
           <Text style={styles.releaseDate}>{movie.release_date}</Text>
           <Text style={styles.cast}>{movie.title}</Text>
           <Text style={styles.description}>{movie.overview}</Text>
         </View>
-      </View>
+      </ScrollView>
     </View>
   );
 }

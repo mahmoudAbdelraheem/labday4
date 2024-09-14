@@ -3,8 +3,6 @@ export default styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#1E1E1E",
-    alignItems: "center",
-    justifyContent: "center",
   },
   image: {
     position: "absolute",
@@ -16,7 +14,6 @@ export default styles = StyleSheet.create({
   },
   closeIcon: {
     position: "absolute",
-
     top: 10,
     right: 10,
   },
@@ -53,21 +50,21 @@ export default styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
-  content: {
-    position: "absolute",
-    top: 480,
-    width: "100%",
+
+  scrollContent: {
     alignItems: "center",
+    paddingTop: 480,
+    paddingBottom: 20,
   },
   buttons: {
     width: "100%",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+    backgroundColor: "#1E1E1E",
   },
   play: {
     height: 65,
-
     backgroundColor: "white",
     color: "black",
     width: 260,
@@ -90,6 +87,9 @@ export default styles = StyleSheet.create({
   },
   recommendIcon: {
     marginRight: 10,
+  },
+  movieDetails: {
+    backgroundColor: "#1E1E1E",
   },
   recommendText: {
     color: "white",
